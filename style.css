@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Open+Sans&family=Roboto:wght@100&display=swap');
+
+body{
+    background-color: #141414; 
+    color:#8B8B8B;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+.resume-container{
+    width:80vh;
+    background-color: #282828;
+    padding: 40px 20px 40px 40px;
+    display:flex;
+    flex-wrap:wrap;
+}
+/* Section 1 - Name, Contact, and Work Experience*/
+.resume-top-section{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+}
+/* A. Section 1 - Top left - Name */
+.name-section{
+    width:60%;
+    color:white;
+    display:flex;
+    align-items:center;
+    flex-wrap:wrap;
+    text-align: center;
+}
+.sample-only{
+    width: 100px;
+    height: auto;
+    padding: 1em;
+    margin: 0 auto;
+
+}
+.name-section>h1{
+    width:60%;
+    font-family: 'Lato', sans-serif;
+    margin: 0 auto;
+    padding: 0 0.5em;
+    font-size: 32px;
+}
+.name-section>h4{
+    width: 60%;
+    color: #41A4D3;
+    margin: 0;
+    font-size:20px;
+}
+/* B. Section 1 - Top right - Contact Info */
+.contact-section{
+    width:39%;
+    padding: 2em 0;   
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+.contact-section-label{
+    text-align: right;
+}
+.contact-label{
+    padding:0 1em 0.5em 0;
+    margin:0;
+    color: white;
+    font-size: 12px;
+    font-family: 'Lato', sans-serif;
+}
+/* Set the email address color */
+.contact-section-input p:last-child{
+    color:#41A4D3;
+}
+.contact-input{
+    padding: 0 0 0.5em 0;
+    margin:0;
+    color:#8B8B8B;
+    font-size: 12px;
+    font-family: 'Lato', sans-serif;
+}
+/* C. Section1 - Bottom - Work Experience */
+.summary-section{
+    width:100%;
+}
+.summary-body{
+    margin: 0 auto;
+}
+.divider-main{
+    border: none;
+    height: 1px;
+    width: 100%;
+    background-color: #414040;
+    margin: 4em 0;
+
+}
+/* Section 2: Work Experience & Education */
+.resume-lower-left-section{
+    width: 68%;
+    padding: 0 20px 0 0;
+}
+/* Section 3: Skills */
+.resume-lower-right-section{
+    width: 23%;
+    min-width: 23%;
+    padding: 0 0 0 20px;
+}
+.pm-acn-container{
+    display:flex;
+    flex-wrap:wrap;
+}
+.sm-acn-container{
+    display:flex;
+    flex-wrap:wrap;
+}
+.education-group{
+    display:flex;
+    flex-wrap:wrap;
+}
+/* Icon: Drop-down for Employment; Change size and color */
+.credentials-group .fa-square-caret-down{
+    padding: 0 10px 0 0;
+    color:#41A4D3;
+    font-size:40px;
+}
+/* Icon: Drop-down for Education; Change size and color */
+.education-group .fa-square-caret-down{
+    padding: 0 10px 0 0;
+    color:#67A62C;
+    font-size:40px;
+}
+.sub-heading{
+    width: 100%;
+    color:white;
+    font-family: 'Lato', sans-serif;
+    background-color: #373737;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-items:flex-start;
+}
+/* Icon: Arrow for Company Names; Change size and color */
+.credentials-group .fa-circle-chevron-right{
+    padding: 0 8px 0 0;
+    color:#41A4D3;
+    font-size: 16px;
+}
+/* Icon: Arrow for School Name; Change size and color */
+.education-group .fa-circle-chevron-right{
+    padding: 0 8px 0 0;
+    color:#67A62C;
+    font-size: 16px;
+}
+.aside{
+    color:white;
+    font-family: 'Lato', sans-serif;
+
+}
+.company-name{
+    width:50%;
+    margin: 20px 0 1px 0;
+    color:white;
+    font-family: 'Lato', sans-serif;
+    font-size:20px;
+    display:flex;
+    align-items:center;
+    justify-items:left;
+}
+.year{
+    width:49%;
+    margin: 20px 0 1px 0;
+    padding: 0;
+    text-align:right;
+    font-family: 'Lato', sans-serif;
+    font-size:20px;
+    color:#5c5b5b;
+}
+.role{
+    margin:0;
+    font-family: 'Lato', sans-serif;
+}
+.sub-divider{
+    border: none;
+    height: 0.5px;
+    width: 100%;
+    background-color: #282828;
+    margin: 1em 0;
+    border-top: 1px dashed #414040;
+}
+.text-prog-skill{
+    padding: 10px 0;
+    font-family: 'Lato', sans-serif;
+}
+.progress-bar-html{
+    width: 100%;
+    background-color: #373737;
+}
+.progress-html{
+    color: white;
+    background-color: #41A4D3;
+    text-align: right;
+    font-family: 'Lato', sans-serif;
+    width: 80%;
+}
+.text-css{
+    padding:4px 0;
+
+}
+.progress-bar-css{
+    width: 100%;
+    background-color: #373737;
+}
+.progress-css{
+    color: white;
+    background-color: #6AA626;
+    text-align: right;
+    font-family: 'Lato', sans-serif;
+    width: 90%;
+}
+.progress-bar-js{
+    width: 100%;
+    background-color: #373737;
+}
+.progress-js{
+    color: white;
+    background-color: #FDBF26;
+    text-align: right;
+    font-family: 'Lato', sans-serif;
+    width: 20%;
+    margin: 0 0 80px 0;
+}
+.square-graphic{
+    display:flex;
+    align-items:center;
+}
+.square-icon{
+    width: 10px;
+    height: 10px;
+    margin: 0 5px 0 0;
+}
+.square-1{
+    background-color: #41A4D3;
+}
+.square-2{
+    background-color: #6AA626;;
+}
+.square-3{
+    background-color: #FDBF26;
+}
+.square-4{
+    background-color: #EF2C01;
+}
+.text-graphic-skill{
+    font-size:12px;
+    font-family: 'Lato', sans-serif;
+}
