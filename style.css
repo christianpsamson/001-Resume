@@ -7,14 +7,19 @@ body{
     font-size: 14px;
     display: flex;
     justify-content: center;
-    min-height: 100vh;
+}
+.social-media{
+    width: 100%;
+    display:flex;
+    color:#414040`
+} 
+.fa-brands{
+    padding: 0 20px;
 }
 .resume-container{
-    width:80vh;
+    width:1000px;
+    min-width:375px;
     background-color: #282828;
-    padding: 40px 20px 40px 40px;
-    display:flex;
-    flex-wrap:wrap;
 }
 /* Section 1 - Name, Contact, and Work Experience*/
 .resume-top-section{
@@ -24,50 +29,34 @@ body{
 }
 /* A. Section 1 - Top left - Name */
 .name-section{
-    width:60%;
     color:white;
-    display:flex;
-    align-items:center;
-    flex-wrap:wrap;
-    text-align: center;
 }
-.sample-only{
-    width: 100px;
-    height: auto;
-    padding: 1em;
-    margin: 0 auto;
-
-}
-.name-section>h1{
-    width:60%;
+.name-section h1{
     font-family: 'Lato', sans-serif;
-    margin: 0 auto;
-    padding: 0 0.5em;
     font-size: 32px;
+    margin: 0 auto;
 }
-.name-section>h4{
-    width: 60%;
-    color: #41A4D3;
-    margin: 0;
-    font-size:20px;
+.name-section h4{
+    color:#41A4D3;
+    font-size: 20px;
+    margin: 0 auto 2em auto;
 }
 /* B. Section 1 - Top right - Contact Info */
 .contact-section{
-    width:39%;
-    padding: 2em 0;   
+    width: 100%;
     display:flex;
-    flex-wrap:wrap;
-    justify-content: center;
+    margin-left: auto;
+    padding-bottom: 3em;
 }
-.contact-section-label{
-    text-align: right;
-}
+
 .contact-label{
     padding:0 1em 0.5em 0;
     margin:0;
     color: white;
     font-size: 12px;
     font-family: 'Lato', sans-serif;
+    width: 100px;
+    text-align: right;
 }
 /* Set the email address color */
 .contact-section-input p:last-child{
@@ -95,25 +84,16 @@ body{
     margin: 4em 0;
 
 }
-/* Section 2: Work Experience & Education */
-.resume-lower-left-section{
-    width: 68%;
-    padding: 0 20px 0 0;
-}
 /* Section 3: Skills */
 .resume-lower-right-section{
-    width: 23%;
     min-width: 23%;
     padding: 0 0 0 20px;
 }
-.pm-acn-container{
+.acn-container{
     display:flex;
     flex-wrap:wrap;
 }
-.sm-acn-container{
-    display:flex;
-    flex-wrap:wrap;
-}
+
 .education-group{
     display:flex;
     flex-wrap:wrap;
@@ -131,11 +111,10 @@ body{
     font-size:40px;
 }
 .sub-heading{
-    width: 100%;
+    width:100%;
     color:white;
     font-family: 'Lato', sans-serif;
     background-color: #373737;
-    padding: 0;
     display: flex;
     align-items: center;
     justify-items:flex-start;
@@ -155,20 +134,16 @@ body{
 .aside{
     color:white;
     font-family: 'Lato', sans-serif;
-
 }
 .company-name{
-    width:50%;
+    width: 60%;
     margin: 20px 0 1px 0;
     color:white;
     font-family: 'Lato', sans-serif;
     font-size:20px;
-    display:flex;
-    align-items:center;
-    justify-items:left;
 }
 .year{
-    width:49%;
+    width:31%;
     margin: 20px 0 1px 0;
     padding: 0;
     text-align:right;
@@ -177,7 +152,9 @@ body{
     color:#5c5b5b;
 }
 .role{
+    width: 100%;
     margin:0;
+    padding: 0 auto;
     font-family: 'Lato', sans-serif;
 }
 .sub-divider{
@@ -230,10 +207,10 @@ body{
     width: 20%;
     margin: 0 0 80px 0;
 }
-.square-graphic{
+/* .square-graphic{
     display:flex;
     align-items:center;
-}
+} */
 .square-icon{
     width: 10px;
     height: 10px;
@@ -254,4 +231,87 @@ body{
 .text-graphic-skill{
     font-size:12px;
     font-family: 'Lato', sans-serif;
+}
+.dot-filled{
+    background-color: yellow;
+}
+.circle {
+    width: 16px;
+    height: 16px;
+    background-color: #373737; 
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px; 
+}
+.english .circle.filled{
+    background-color: #41A4D3;
+}
+.german .circle.filled{
+    background-color: #6AA626;
+}
+.tagalog .circle.filled{
+    background-color: #FDBF26;
+}
+/* Styles for screens smaller than 768px (e.g., mobile) */
+@media(max-width: 768px){
+    .sample-only{display: none}
+    .social-media{
+        justify-content:center;
+    } 
+    .resume-container{
+        display:flex;
+        flex-direction: column;
+        padding: 0 20px 40px 40px;
+    }
+    .resume-top-section{
+        order:1;
+    }
+    .resume-lower-left-section{
+        order:3;
+    }
+    .resume-lower-right-section{
+        order:2;
+        padding-bottom: 10px;
+    }
+    .resume-lower-left-section{
+        padding: 0 1.5em;
+    }
+    .summary-body{
+        padding: 0 1.5em;
+    }
+}
+/* Styles for screens between 768px and 1024px (e.g., tablets) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .sample-only{display: none}
+}
+/* Styles for screens larger than 1024px (e.g., desktop) */
+@media (min-width: 1025px) {
+    .resume-container{
+        padding: 40px 20px 40px 40px;
+        margin: 80px 0;
+        display:flex;
+        flex-wrap:wrap;
+    }
+    .name-section{
+        display:flex;
+        align-items:center;
+    }
+    .sample-only{
+        width: 170px;
+        height: auto;
+        padding: 0 20px 40px 0;
+    
+    }
+    .contact-section{
+        width: auto;
+        
+    }
+
+    .resume-lower-left-section{
+        width: 68%;
+        padding: 0 20px 0 0;
+    }
+    .social-media{
+        justify-content:flex-end;
+    } 
 }
